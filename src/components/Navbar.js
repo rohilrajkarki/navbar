@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import {
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaYoutubeSquare,
-} from "react-icons/fa";
+  FiFacebook,
+  FiInstagram,
+
+} from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import { NavLink } from "react-router-dom";
@@ -16,10 +16,10 @@ const Navbar = () => {
       <nav className="main-nav">
         {/* 1st logo part  */}
         <div className="logo">
-          <h2>
-            <span>T</span>hapa
-            <span>T</span>echnical
-          </h2>
+          <img
+            src="https://kalpaenterprises.com/assets/images/logo.jpg"
+            alt="" width="50" height="60"
+          />
         </div>
 
         {/* 2nd menu part  */}
@@ -29,16 +29,16 @@ const Navbar = () => {
           }>
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/">HOME</NavLink>
             </li>
             <li>
-              <NavLink to="/about">about</NavLink>
+              <NavLink to="/about">ABOUT</NavLink>
             </li>
             <li>
-              <NavLink to="/service">services</NavLink>
+              <NavLink to="/service">OUR PRODUCTS</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">contact</NavLink>
+              <NavLink to="/contact">CONTACT</NavLink>
             </li>
           </ul>
         </div>
@@ -48,25 +48,19 @@ const Navbar = () => {
           <ul className="social-media-desktop">
             <li>
               <a
-                href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                target="_thapa">
-                <FaFacebookSquare className="facebook" />
+                href=""
+                target="">
+                <FiFacebook className="facebook" />
               </a>
             </li>
             <li>
               <a
-                href="https://www.instagram.com/thapatechnical/"
-                target="_thapa">
-                <FaInstagramSquare className="instagram" />
+                href=""
+                target="">
+                <FiInstagram className="instagram" />
               </a>
             </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                target="_thapa">
-                <FaYoutubeSquare className="youtube" />
-              </a>
-            </li>
+
           </ul>
 
           {/* hamburget menu start  */}
@@ -78,11 +72,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* hero section  */}
-      {/* <section className="hero-section">
-        <p>Welcome to </p>
-        <h1>Thapa Technical</h1>
-      </section> */}
+
     </>
   );
 };
